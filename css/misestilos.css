@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Parisienne&display=swap');
+
+/*Efecto a header*/
+
+p{font-family: 'Parisienne'; font-size:60px; text-align: center; font-weight: 800; color: white; text-shadow: 1px 1px 2px black !important;}
+.trans{transition: all 2s;}
+    .trans:hover {width: 810px; height: 810px; border: solid 5px white;}
+    .animatitulo{
+        animation-name: titulo;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    @keyframes titulo{ from{opacity: 0; transform:translateX(-900px);}
+to{opacity: 100; transform: translateX(0px);}
+}
+
+
+main,body{background-color:whitesmoke;
+}
+h1{ font-family:'Parisienne';font-weight: 800;color:blueviolet; text-shadow: 1px 1px 2px black;font-size: 36px;
+}
+.bgcolorheader { background-color: violet;
+}
+nav{background-color:violet;font-family: 'Amatic SC'; font-weight:700; font: size 50px;
+}
+#menu a {font-family: 'Amatic SC'; font-weight:700; font-size: 26px;
+}
+#menu button {font-family: 'Amatic SC'; font-weight:700; font-size: 26px; background-color:white;
+}
+p,h2,h3,div {font-family: 'Amatic SC'; font-weight:700; font-size: 26px; color: purple;
+}
+
+/*Tamaño de Carrusel*/
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+/*Responsive*/
+
+@media (max-width:768px) {
+    #introduccion, #nosotros{
+        width:90% !important;
+    }
+    #nosotros p {
+        display: none;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+@media(max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width: 90%;
+        margin-top: auto;
+        padding-top: 50px;
+    }
+}
+
+/*Nosotros*/
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+#local {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.mapa {
+    background: url(/imagenes/mapa.JPG);
+    background-repeat: no-repeat;
+    width:100%;
+    height:400px;
+}
+
+
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+/*Formulario*/
+
+#contenedor-formulario{
+    
+    background: #fbfafa;
+    
+    
+}
+
+#color-boton{
+    background: violet !important;
+}
+/*Footer*/
+
+footer {
+    background:violet;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+.fondonosotros{background-image: url(/imagenes/fondonosotros.jpg);background-position: center; background-repeat: no-repeat;background-size:cover;}
+.fondocanalcomercial{background-image: url(/imagenes/fondo1.webp);background-position: center; background-repeat: no-repeat;background-size:cover;}
+.nosotros_flex{display:flex;
+    flex-direction: column;
+    justify-content:center;
+    height:auto;
+    }
+
+
+/*GALERIA DE IMAGENES*/
+
+#galeria .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#galeria img{
+    width:100%;
+    height: 250px;
+}
+
+#galeria img:hover{
+    border: 5px solid violet;
+}
+
